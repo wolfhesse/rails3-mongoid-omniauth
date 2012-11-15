@@ -3,3 +3,5 @@
   User: #{@user.name}
 %p
   Email: #{@user.email if @user.email}
+%p
+  (since): #{@user.created_at.to_date if @user.created_at}
